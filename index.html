@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM Testing Site</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./quoridor.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/script.js"></script>
+    <script src="./quoridor.js"></script>
+</head>
+<body class="darkTheme" id="body">
+    <div class="header">
+        <p class="siteLink">
+            <a href="/">SamTS</a>
+            <a href="/games/">Games</a>
+            <a href="/other">Other</a>
+        </p>
+        <h1>Sam TS Games</h1>
+    </div>
+    <button class="theme" type="button" onclick="myFunction()">Theme</button>
+    <canvas id="quoridor" width=400 height=400 class="gameboard" style="border:1px solid #000000;">
+    </canvas>
+    <p id="turn"></p>
+    <p id="logs"></p>
+    <h2>Instructions:</h2>
+    <p id="instructions">
+        The goal of the game is to reach any square on the edge opposite your starting position.
+        Each player receives an equal number of walls (listed by the starting edge) that can be placed to block opponents.
+        Quoridor is a turn-based game. Each turn you may either move or place a wall.
+        You may only move one space, unless you jump an opponent's piece. You may not move through walls.
+        Walls cannot be placed inside eachother or hanging off the edge of the board. No wall can be placed which would block any player from reaching his/her goal.
+    </p>
+</body>
+</html>
